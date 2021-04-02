@@ -1,0 +1,52 @@
+[{
+    "id": 1,
+    "usuario": "AlberthRKO",
+    "nombre": "Alberto Orlando",
+    "apellido": "Paredes Mamani",
+    "sexo": "M",
+    "edad": 23,
+    "cargo": "Administrador",
+    "departamento": "CAPYSH"
+  },
+  {
+    "id": 2,
+    "usuario": "Keith",
+    "nombre": "Alberto Orlando",
+    "apellido": "Paredes Mamani",
+    "sexo": "M",
+    "edad": 23,
+    "cargo": "Administrador",
+    "departamento": "CAPYSH"
+  },
+  {
+    "id": 3,
+    "usuario": "Lobo",
+    "nombre": "Osvaldo",
+    "apellido": "Garcia Rojas",
+    "sexo": "M",
+    "edad": 23,
+    "cargo": "Secretario",
+    "departamento": "CAPYSH"
+  },
+  {
+    "id": 4,
+    "usuario": "VitoZM",
+    "nombre": "Alvaro Luis",
+    "apellido": "Zapata Moscoso",
+    "sexo": "M",
+    "edad": 25,
+    "cargo": "Administrador",
+    "departamento": "CAPYSH"
+  },
+  {
+    "id": 5,
+    "usuario": "YSMar",
+    "nombre": "Marlen",
+    "apellido": "Yucra Seña",
+    "sexo": "F",
+    "edad": 22,
+    "cargo": "Secretaria",
+    "departamento": "CAPYSH"
+  }
+
+]
