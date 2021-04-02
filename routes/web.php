@@ -33,13 +33,13 @@ Route::get('/', function () {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::resource("productos", ProductsController::class);
-Route::resource("blog", BlogController::class);
+Route::resource("productos", ProductsController::class)->middleware('auth');
+Route::resource("blog", BlogController::class)->middleware('auth');
 
-Route::get('/productos/{productos}/editProducto',[ProductsController::class, 'edit'])->name('editProducto');
+Route::get('/productos/{productos}/editProducto',[ProductsController::class, 'edit'])->name('editProducto')->middleware('auth');
 Route::get('/shop/{productos}/ver-producto',[ProductsController::class, 'show'])->name('ver-producto');
 Route::get('/shop',[ProductsController::class, 'mostrarProducto'])->name('shop');
-Route::get('/blog/{blog}/editBlog',[BlogController::class, 'edit'])->name('editBlog');
+Route::get('/blog/{blog}/editBlog',[BlogController::class, 'edit'])->name('editBlog')->middleware('auth');
 Route::get('/blogger/{blog}/ver-blog',[BlogController::class, 'show'])->name('ver-blog');
 Route::get('/blogger',[BlogController::class, 'mostrarBlog'])->name('blogger');
 
