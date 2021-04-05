@@ -9,7 +9,7 @@
     <meta name="description" content="Control de productos NIVELGAS">
     <meta name="keywords" content="Template by Alberth Paredes">
     <meta name="author" content="Alberth Paredes">
-    <title>NIVELGAS</title>
+    <title>Nivelgas - Tienda Online</title>
     <link rel="apple-touch-icon" href="app-assets/images/ico/apple-icon-120.png">
     <link rel="shortcut icon" type="image/x-icon" href="app-assets/images/logo.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">

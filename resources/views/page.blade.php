@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-    <title>Demo - Bootstrap eCommerce Template</title>
+    <title>Nivelgas - Tienda Online</title>
 
     <meta name="keywords" content="HTML5 Template" />
     <meta name="description" content="Demo - Bootstrap eCommerce Template">
@@ -15,7 +15,7 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="pagina/images/icons/favicon.png">
 
-    <script>
+    {{-- <script>
         WebFontConfig = {
             google: { families: ['Open+Sans:300,400,600,700', 'Poppins:400,500,600,700'] }
         };
@@ -25,10 +25,11 @@
             wf.async = true;
             s.parentNode.insertBefore(wf, s);
         })(document);
-    </script>
+    </script> --}}
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/css/bootstrap-extended.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" href="pagina/vendor/fontawesome-free/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="pagina/vendor/animate/animate.min.css">
@@ -37,13 +38,19 @@
     <link rel="stylesheet" type="text/css" href="pagina/vendor/magnific-popup/magnific-popup.min.css">
     <link rel="stylesheet" type="text/css" href="pagina/vendor/owl-carousel/owl.carousel.min.css">
     <link rel="stylesheet" type="text/css" href="pagina/vendor/photoswipe/photoswipe.min.css">
+    <link rel="stylesheet" type="text/css" href="app-assets/vendors/css/vendors.min.css">    
     <link rel="stylesheet" type="text/css" href="pagina/vendor/photoswipe/default-skin/default-skin.min.css">
 
     <!-- Main CSS File -->
     <link rel="stylesheet" type="text/css" href="pagina/css/style.min.css">
     <link rel="stylesheet" type="text/css" href="pagina/css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="pagina/css/estilos.css">
 
     <style>
+
+        body{
+            font-family: "Montserrat", Helvetica, Arial, serif !important;
+        }
         .product-bg-style {
             border-radius: 20px;
         }
@@ -82,36 +89,52 @@
         <section class="header-section container">
             <div class="col-md-12 col-12">
                 <div class="container top-nav_menu">
-                    <nav class="navbar navbar-expand-md navbar-light">
+                    <nav class="navbar navbar-expand-lg navbar-light">
                         <a href="/" class="navbar-brand"><img src="pagina/images/sitelogo.png" alt=""></a>
                         <button type="button" class="navbar-toggler" data-toggle="collapse"
                             data-target="#navbarCollapse">
                             <span class="navbar-toggler-icon"></span>
                         </button>
 
+                        <div class="order-md-1 d-flex justify-content-around">
+                            <a href="#" class="btn btn-secondary d-none d-lg-block">Pide Presupuesto</a>
+                            <a href="#" class="btn btn-primary d-none d-lg-block"><i class="feather icon-user mr-2"></i> Acceder</a>
+
+                        </div>
+
                         <div class="collapse navbar-collapse" id="navbarCollapse">
                             <div class="navbar-nav">
 
                             </div>
-                            <div class="navbar-nav ml-auto">
-                                <a href="/" class="nav-item nav-link active">Home</a>
-                                <a href="formulario.html" class="nav-item nav-link">formulario</a>
-                                <a href="shop" class="nav-item nav-link">Shop</a>
-                                <a href="product.html" class="nav-item nav-link">Product</a>
-                                <a href="blogger" class="nav-item nav-link">blog</a>
+                            <div class="navbar-nav mr-auto">
+                                <a href="/" class="nav-item nav-link text-uppercase active">Home</a>
+                                <a href="formulario" class="nav-item text-uppercase nav-link">Formulario</a>
+                                <a href="shop" class="nav-item text-uppercase nav-link">Tienda</a>
+                                <a href="blogger" class="nav-item text-uppercase nav-link">Blog</a>
                                 <div class="header-search hs-toggle">
                                     <a href="#" class="search-toggle">
                                         <i class="d-icon-search"></i>
                                     </a>
                                     <form action="#" class="input-wrapper">
                                         <input type="text" class="form-control" name="search" autocomplete="off"
-                                            placeholder="Search your keyword..." required />
+                                            placeholder="Busca tu producto.." required />
                                         <button class="btn btn-search" type="submit">
                                             <i class="d-icon-search"></i>
                                         </button>
                                     </form>
                                 </div>
+
+                                <div class="d-md-none">
+                                    <div class="d-flex flex-column">
+
+                                        <a href="#" class="btn btn-secondary text-white mb-2 font-weight-bold text-uppercase">Pide Presupuesto</a>
+                                        <a href="#" class="btn btn-primary text-white font-weight-bold text-uppercase"><i class="feather icon-user mr-2"></i> Acceder</a>
+                                    </div>
+                                </div>
+
+
                             </div>
+                        </div>
                     </nav>
                 </div>
 
@@ -217,7 +240,7 @@
                         </div>
 
                         <div class="col-md-6 d-flex align-items-center ">
-                            <div class="banner-text">
+                            <div class="banner-text estilo text-dark">
                                 <h2>Lorum epsum dolor sit amet, consectetuer</h2>
                                 <p>Lorem ipsum dolor sit amet,<br> consectetuer adipiscing elit. Aenean </p>
                                 <a class="banner-btn-style" href="#">lorem ipsum</a>
@@ -227,7 +250,7 @@
                 </div>
             </section>
 
-            <section class="moda-inteligent-section" style="background: #F8F8F8;">
+            <section class="moda-inteligent-section" style="background: #FFF;">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5">
@@ -265,17 +288,17 @@
                 </div>
             </section>
 
-            <section class="img-up-section container">
+            <section class="img-up-section container estilo">
                 <div class="img-up-style">
                     <div class="img-up-title text-center">
                         <h2>¿Cómo lo hacemos?</h2>
                         <p> Hacemos moda de un modo distinto</p>
                     </div>
-                    <div class="row">
+                    <div class="row align-items-stretch">
                         <div class="col-md-4">
-                            <div class="img-up-content text-center">
+                            <div class="img-up-content text-center p-2 boxing">
                                 <img class="center" src="pagina/images/assest.png">
-                                <h3>En la producción</h3>
+                                <h4>En la producción</h4>
                                 <p>Hecha en España y Portugal, con técnicas limpias y
                                     sostenibles, a través de 14 proveedores y más de 500
                                     operarios y técnicos, reduciendo el CO2 derivado del
@@ -283,9 +306,9 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="img-up-content text-center">
+                            <div class="img-up-content text-center p-2 boxing">
                                 <img class="center" src="pagina/images/png1.png">
-                                <h3>Durante su uso</h3>
+                                <h4>Durante su uso</h4>
                                 <p>Tras años de i+D conseguimos reducir el uso de
                                     agua, detergentes y electricidad. Nuestras
                                     prendas y su tecnología están diseñados para
@@ -293,9 +316,9 @@
                             </div>
                         </div>
                         <div class="col-md-4">
-                            <div class="img-up-content text-center">
+                            <div class="img-up-content text-center p-2 boxing">
                                 <img class="center" src="pagina/images/asses4.png">
-                                <h3>Al terminar su vida útil</h3>
+                                <h4>Al terminar su vida útil</h4>
                                 <p>Son 100% reciclables. Puedes mándanosla para
                                     reciclarla cuando ya no la uses. El mismo proveedor que
                                     hace nuestro hilo le dará una segunda vida.</p>
@@ -305,7 +328,7 @@
                 </div>
             </section>
 
-            <section class="img-banner-section container">
+            <section class="img-banner-section container-fluid px-0">
                 <div class="img-banner-box">
 
                 </div>
@@ -535,10 +558,10 @@
             </div>
 
 
-            <section class="container" style="padding: 0px 30px;">
+            <section class="container-fluid px-0 ml-lg-5">
                 <div class="row">
-                    <div class="col-md-5 col-12">
-                        <div class="top-fotter-section-left" style="padding: 0px 0px 60px 50px;">
+                    <div class="col-md-6 col-12 px-1 px-lg-5">
+                        <div class="top-fotter-section-left" style="padding: 0px 0px 60px 100px;">
                             <h2 style="color: #56595B;">lorem Ipsum</h2>
                             <p style="font-weight: 500;color: #56595B;font-size: 22px;line-height: 25px;">Lorem ipsum
                                 dolor sit amet, <span style="color: #56595A;font-weight: 600;">consectetur
@@ -570,7 +593,7 @@
                             <p class="style-four">Lorem ipsum dolor sit amet, consectetur adipisicin</p>
                         </div>
                     </div>
-                    <div class="col-md-7 col-12">
+                    <div class="col-md-6 col-12">
                         <div class="top-fotter-section-right top-fotter-section-right-banner">
                             <div class="row">
                                 <div class="col-md-6">
@@ -759,64 +782,167 @@
                 </div>
             </section>
 
-            <section class="footer-white-style">
-                <div class="container" class="footer-style">
+
+            <section id="servicios" class="servicios accordion-style-4 bg-color d-lg-none">
+                <div class="container">
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="last-section text-center">
-                                <p class="footer-title">Lorem ipsum dolor</p>
-                                <a href="#">
-                                    <p>Lorem ipsum</p>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum</p>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum</p>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum</p>
-                                </a>
+                        <div class="col-lg-3 mt-3">
+                            <div id="accordion-4-one">
+                                <div class="card estiloTarjeta">
+                                    <div class="card-header bg-white text-dark pb-4 font-weight-bold"
+                                        id="accordion-4-heading-1" data-toggle="collapse"
+                                        data-target="#accordion-4-collapse-1" aria-expanded="false"
+                                        aria-controls="accordion-4-collapse-1">
+                                        Mejora tu hogar
+                                    </div>
+                                    <div id="accordion-4-collapse-1" class="collapse"
+                                        aria-labelledby="accordion-4-heading-1" data-parent="#accordion-4-one">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#" class="footer-link">Inicio</a></li>
+                                            <li><a href="#" class="footer-link">Misión</a></li>
+                                            <li><a href="#" class="footer-link">Colección</a></li>
+                                            <li><a href="#" class="footer-link">Galeria</a></li>
+                                            <li><a href="#" class="footer-link">Clientes</a></li>
+                                            <li><a href="#" class="footer-link">Precios</a></li>
+                                            <li><a href="#" class="footer-link">Contactanos</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="last-section text-center">
-                                <p class="footer-title">Lorem ipsum dolor</p>
-                                <a href="#">
-                                    <p>Lorem ipsum</p>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum</p>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum</p>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum</p>
-                                </a>
-                                <a href="#"><span class="footer-btn-style"><i class="fa fa-plus-circle"
-                                            aria-hidden="true"></i>Lorem ipsum dolor</span></a>
+                        <div class="col-lg-3 mt-3">
+                            <div id="accordion-4-one">
+                                <div class="card estiloTarjeta">
+                                    <div class="card-header bg-white text-dark pb-4 font-weight-bold"
+                                        id="accordion-4-heading-2" data-toggle="collapse"
+                                        data-target="#accordion-4-collapse-2" aria-expanded="false"
+                                        aria-controls="accordion-4-collapse-2">
+                                        Particulares
+                                    </div>
+                                    <div id="accordion-4-collapse-2" class="collapse"
+                                        aria-labelledby="accordion-4-heading-2" data-parent="#accordion-4-one">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#" class="footer-link">Inicio</a></li>
+                                            <li><a href="#" class="footer-link">Misión</a></li>
+                                            <li><a href="#" class="footer-link">Colección</a></li>
+                                            <li><a href="#" class="footer-link">Galeria</a></li>
+                                            <li><a href="#" class="footer-link">Clientes</a></li>
+                                            <li><a href="#" class="footer-link">Precios</a></li>
+                                            <li><a href="#" class="footer-link">Contactanos</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="last-section text-center">
-                                <p class="footer-title">Lorem ipsum dolor</p>
-                                <a href="#">
-                                    <p>Lorem ipsum</p>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum</p>
-                                </a>
-                                <a href="#">
-                                    <p>Lorem ipsum</p>
-                                </a>
-                                <a href="#"><span class="footer-btn-style"><i class="fa fa-plus-circle"
-                                            aria-hidden="true"></i>Lorem ipsum dolor</span></a>
+                        <div class="col-lg-3 mt-3">
+                            <div id="accordion-4-one">
+                                <div class="card estiloTarjeta">
+                                    <div class="card-header bg-white text-dark pb-4 font-weight-bold"
+                                        id="accordion-4-heading-2" data-toggle="collapse"
+                                        data-target="#accordion-4-collapse-2" aria-expanded="false"
+                                        aria-controls="accordion-4-collapse-2">
+                                        Profesionales
+                                    </div>
+                                    <div id="accordion-4-collapse-2" class="collapse"
+                                        aria-labelledby="accordion-4-heading-2" data-parent="#accordion-4-one">
+                                        <ul class="list-unstyled">
+                                            <li><a href="#" class="footer-link">Inicio</a></li>
+                                            <li><a href="#" class="footer-link">Misión</a></li>
+                                            <li><a href="#" class="footer-link">Colección</a></li>
+                                            <li><a href="#" class="footer-link">Galeria</a></li>
+                                            <li><a href="#" class="footer-link">Clientes</a></li>
+                                            <li><a href="#" class="footer-link">Precios</a></li>
+                                            <li><a href="#" class="footer-link">Contactanos</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                        <div class="col-lg-3 mt-3">
+                            <div id="accordion-4-one">
+                                <div class="card estiloTarjeta">
+                                    <div class="card-header bg-white text-dark pb-4 font-weight-bold"
+                                        id="accordion-4-heading-3" data-toggle="collapse"
+                                        data-target="#accordion-4-collapse-3" aria-expanded="false"
+                                        aria-controls="accordion-4-collapse-3">
+                                        Sobre Nivelgas
+                                    </div>
+                                    <div id="accordion-4-collapse-3" class="collapse"
+                                        aria-labelledby="accordion-4-heading-3" data-parent="#accordion-4-one">
+                                        <div class="card-body">
+                                            <ul class="list-unstyled">
+                                                <li><a href="#" class="footer-link">Inicio</a></li>
+                                                <li><a href="#" class="footer-link">Misión</a></li>
+                                                <li><a href="#" class="footer-link">Colección</a></li>
+                                                <li><a href="#" class="footer-link">Galeria</a></li>
+                                                <li><a href="#" class="footer-link">Clientes</a></li>
+                                                <li><a href="#" class="footer-link">Precios</a></li>
+                                                <li><a href="#" class="footer-link">Contactanos</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </section>
+
+            <section class="d-none d-lg-block">
+                <div class="container">
+                    <div class="row estilo bordes">
+        
+                        <div class="d-none d-lg-block col-lg-3 text-lg-left">
+                            <h5 class="font-weight-bold pb-3 text-uppercase">Mejora tu Hogar</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="footer-link">Inicio</a></li>
+                                <li><a href="#" class="footer-link">Misión</a></li>
+                                <li><a href="#" class="footer-link">Colección</a></li>
+                                <li><a href="#" class="footer-link">Galeria</a></li>
+                                <li><a href="#" class="footer-link">Clientes</a></li>
+                                <li><a href="#" class="footer-link">Precios</a></li>
+                                <li><a href="#" class="footer-link">Contactanos</a></li>
+                            </ul>
+                        </div>
+                        <div class="d-none d-lg-block col-lg-3 text-lg-left">
+                            <h5 class="font-weight-bold pb-3 text-uppercase">Particulares</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="footer-link">Inicio</a></li>
+                                <li><a href="#" class="footer-link">Misión</a></li>
+                                <li><a href="#" class="footer-link">Colección</a></li>
+                                <li><a href="#" class="footer-link">Galeria</a></li>
+                                <li><a href="#" class="footer-link">Clientes</a></li>
+                                <li><a href="#" class="footer-link">Precios</a></li>
+                                <li><a href="#" class="footer-link">Contactanos</a></li>
+                            </ul>
+                        </div>
+                        <div class="d-none d-lg-block col-lg-3 text-lg-left">
+                            <h5 class="font-weight-bold pb-3 text-uppercase">Profesionales</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="footer-link">Inicio</a></li>
+                                <li><a href="#" class="footer-link">Misión</a></li>
+                                <li><a href="#" class="footer-link">Colección</a></li>
+                                <li><a href="#" class="footer-link">Galeria</a></li>
+                                <li><a href="#" class="footer-link">Clientes</a></li>
+                                <li><a href="#" class="footer-link">Precios</a></li>
+                                <li><a href="#" class="footer-link">Contactanos</a></li>
+                            </ul>
+                        </div>
+                        <div class="d-none d-lg-block col-lg-3 text-lg-left">
+                            <h5 class="font-weight-bold pb-3 text-uppercase">Sobre Nivelgas</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="footer-link">Inicio</a></li>
+                                <li><a href="#" class="footer-link">Misión</a></li>
+                                <li><a href="#" class="footer-link">Colección</a></li>
+                                <li><a href="#" class="footer-link">Galeria</a></li>
+                                <li><a href="#" class="footer-link">Clientes</a></li>
+                                <li><a href="#" class="footer-link">Precios</a></li>
+                                <li><a href="#" class="footer-link">Contactanos</a></li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
             </section>
 
 
@@ -824,16 +950,17 @@
         <!-- End Main -->
         <footer>
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
                         <div class="footer-section-style">
-                            <p> <span>Copy Right 2009-2020 </span> terms & conditions privacy policy</p>
+                            <p><span class="text-warning">©</span> CopyRight 2009-2021  terminos y condiciones de uso</p>
                         </div>
                     </div>
+                    <div class="col-md-6 text-right">
+                        <img src="pagina/images/f1.png">
+                    </div>
                 </div>
-                <div class="footer-img">
-                    <img src="pagina/images/f1.png">
-                </div>
+                
             </div>
         </footer>
         <!-- End Footer -->

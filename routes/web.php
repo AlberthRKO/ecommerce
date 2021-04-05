@@ -22,6 +22,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('page');
 });
+Route::get('/formulario', function () {
+    return view('formulario');
+});
 
 
 /*Route::post('/admin', function () {

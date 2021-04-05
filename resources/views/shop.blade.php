@@ -5,10 +5,10 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
-	<title>Donald - Bootstrap eCommerce Template</title>
+	<title>Nivelgas - Tienda Online</title>
 
 	<meta name="keywords" content="HTML5 Template" />
-	<meta name="description" content="Donald - Bootstrap eCommerce Template">
+	<meta name="description" content="Nivelgas - Tienda Online">
 	<meta name="author" content="D-THEMES">
 
 	<!-- Favicon -->
