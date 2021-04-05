@@ -98,7 +98,7 @@
 
                         <div class="order-md-1 d-flex justify-content-around">
                             <a href="#" class="btn btn-secondary d-none d-lg-block">Pide Presupuesto</a>
-                            <a href="#" class="btn btn-primary d-none d-lg-block"><i class="feather icon-user mr-2"></i> Acceder</a>
+                            <a href="login" class="btn btn-primary d-none d-lg-block"><i class="feather icon-user mr-2"></i> Acceder</a>
 
                         </div>
 
@@ -128,7 +128,7 @@
                                     <div class="d-flex flex-column">
 
                                         <a href="#" class="btn btn-secondary text-white mb-2 font-weight-bold text-uppercase">Pide Presupuesto</a>
-                                        <a href="#" class="btn btn-primary text-white font-weight-bold text-uppercase"><i class="feather icon-user mr-2"></i> Acceder</a>
+                                        <a href="login" class="btn btn-primary text-white font-weight-bold text-uppercase"><i class="feather icon-user mr-2"></i> Acceder</a>
                                     </div>
                                 </div>
 
